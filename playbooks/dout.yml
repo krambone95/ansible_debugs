@@ -6,7 +6,7 @@
   vars_files:
     - ../vars/proxy_hosts.yml
 
-- tasks:
+# Print as title
+- name: "Something here"
   debug:
-    msg: "System"
-
+    msg: "Dummy message"
