@@ -1,10 +1,4 @@
 ---
 # Show some output for testing access to nested variables
-- name: "Ansible | Print a variable if defined"
-  debug:
-    msg: "The 'foo' variable value is {{ foo }}"
-  when: foo is defined
-
 - debug:
     msg: "The 'bar' variable is undefined"
-  when: bar is not define
