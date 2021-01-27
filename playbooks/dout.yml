@@ -5,4 +5,4 @@
      - include_vars:
          file: ../vars/proxy_hosts.yml
      - debug: 
-         msg: Access var: "{{ server_names.name["squidvpm"]["explicit_proxy_port"] }}"
+         msg: Access var: "{{ server_names.name }}"
