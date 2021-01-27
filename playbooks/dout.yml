@@ -1,10 +1,12 @@
 ---
 # Show some output for testing access to nested variables
 
-- name: begin variable fun
-  hosts: all
-  vars_files:
-    - ../vars/proxy_hosts.yml
-- name: "Ansible | Print a variable"
+- name: "Ansible | Print a variable if defined"
   debug:
-    msg: "The operating system is {{ ansible_distribution }}"
+    msg: "The 'foo' variable value is {{ foo }}"
+  when: foo is defined
+
+- name: "Ansible | Print a message if a variable is undefined"
+  debug:
+    msg: "The 'bar' variable is undefined"
+  when: bar is not defined
