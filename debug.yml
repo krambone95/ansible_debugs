@@ -1,0 +1,11 @@
+---
+# Show some output for testing access to nested variables
+
+- name: begin variable fun
+  hosts: all
+
+- name: include a file with variables in it
+  include_vars:
+    file: proxy_hosts.yml
+
+- debug: msg={{ service_names.name }}
