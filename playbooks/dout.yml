@@ -4,4 +4,9 @@
 - name: begin variable fun
   hosts: all
   vars_files:
-    - proxy_hosts.yml
+    - ../vars/proxy_hosts.yml
+
+- name: debug output
+  debug:
+  msg
+  - "{{ service_names }}"
