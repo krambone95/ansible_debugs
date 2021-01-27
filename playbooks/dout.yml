@@ -1,4 +1,9 @@
 ---
 # Show some output for testing access to nested variables
-- debug:
-    msg: "The 'bar' variable is undefined"
+- hosts: all
+  gather_facts: yes
+  tasks:
+     - debug: 
+         msg: "Network interfaces assigned to "
+     - debug: 
+         msg: "Default IPv4 address assign to "
