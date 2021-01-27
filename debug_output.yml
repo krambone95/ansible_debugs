@@ -1,0 +1,2 @@
+---
+- debug: msg={{ network.addresses.private_man | selectattr("type", "equalto", "floating") | map(attribute='addr') | list }}
