@@ -4,7 +4,7 @@
 - name: begin variable fun
   hosts: all
   vars_files:
-    - ../vars/proxy_hosts.ymy
+    - ../vars/proxy_hosts.yml
 - name: output variable fun
   debug:
     msg: "Dummy message"
