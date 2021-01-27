@@ -6,6 +6,6 @@
   vars_files:
     - ../vars/proxy_hosts.yml
 
-- name: debug output
-  debug:
-    msg: TESTING OUTPUT MESSAGE
+- debug:
+    msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"
+
