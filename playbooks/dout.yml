@@ -5,6 +5,6 @@
   hosts: all
   vars_files:
     - ../vars/proxy_hosts.yml
-- name: output variable fun
+- name: "Ansible | Print a variable"
   debug:
-    msg: "Dummy message"
+    msg: "The operating system is {{ ansible_distribution }}"
