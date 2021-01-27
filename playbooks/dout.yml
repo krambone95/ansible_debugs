@@ -1,5 +1,7 @@
 ---
-- name: include variables
+# Show some output for testing access to nested variables
+
+- name: include a file with variables in it
   include_vars:
     file: proxy_hosts.yml
 
