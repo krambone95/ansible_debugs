@@ -8,4 +8,4 @@
 
 - name: debug output
   debug:
-    msg: {{ service_names.name["squidvpm"].port_explicit_proxy }}
+    msg: {{ service_names.name[0].port_explicit_proxy }}
