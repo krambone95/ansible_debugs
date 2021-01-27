@@ -2,7 +2,9 @@
 # Show some output for testing access to nested variables
 - hosts: all
   tasks:
-     - include_vars:
-         file: ../vars/proxy_hosts.yml
-     - debug: 
-         msg: Access var "{{ service_names[0]['name'] }}"
+    - include_vars:
+        file: ../vars/proxy_hosts.yml
+    - debug: 
+        msg: Access var {{ item }}
+    with_items:
+      {{ service_names }}
