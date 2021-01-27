@@ -1,5 +1,5 @@
 ---
-service_names:
+proxy_instances:
   - name: squidvpm
     port_explicit_proxy: 3131
     port_http_proxy: 3132
@@ -12,5 +12,3 @@ service_names:
     port_https_proxy: 3136
     acl_type: permissive
     src_net: "192.168.56.132/32"
-    
-remote_install_path: /opt/my_app_config
