@@ -6,5 +6,4 @@
         file: ../vars/proxy_hosts.yml
     - debug: 
         msg: Access var "{{ item }}"
-    with_items:
-    - "{{ service_names }}"
+    loop: "{{ service_names }}"
