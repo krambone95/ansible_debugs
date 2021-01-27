@@ -3,7 +3,7 @@
 
 - name: begin variable fun
   hosts: all
-  vars_file:
-    file: proxy_hosts.yml
+  vars_files:
+    - proxy_hosts.yml
 
 - debug: msg={{ service_names.name }}
