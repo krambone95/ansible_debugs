@@ -6,4 +6,4 @@
   vars_files:
     - proxy_hosts.yml
 
-- debug: msg="{{ service_names }}"
+- debug: msg={{ service_names }}
