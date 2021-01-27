@@ -7,4 +7,4 @@
     - debug: 
         msg: Access var {{ item }}
     with_items:
-    - {{ service_names }}
+    - "{{ service_names }}"
