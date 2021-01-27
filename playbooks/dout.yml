@@ -5,7 +5,7 @@
   hosts: all
   vars_files:
     - proxy_hosts.yml
-
-debug:
+- name: debug output
+  debug:
   msg
   - "{{ service_names[0].name }}"
