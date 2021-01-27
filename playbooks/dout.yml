@@ -5,5 +5,6 @@
     - include_vars:
         file: ../vars/proxy_hosts.yml
     - debug: 
-        msg: Access var "{{ item.name }}"
+        msg: 
+        - Access var "{{ item.name }}"
       loop: "{{ service_names }}"
