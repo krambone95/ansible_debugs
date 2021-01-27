@@ -1,10 +1,7 @@
 ---
-# Show some output for testing access to nested variables
-- hosts: all
-  tasks:
-     - debug: 
-         msg: "Network interfaces assigned to "
-     - debug: 
-         msg: "Default IPv4 address assign to "
-     - include_vars:
-         file: ../vars/proxy_hosts.yml
+- debug: 
+   msg: "Network interfaces assigned to "
+- debug: 
+   msg: "Default IPv4 address assign to "
+- include_vars:
+   file: ../vars/proxy_hosts.yml
