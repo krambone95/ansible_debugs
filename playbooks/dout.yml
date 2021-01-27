@@ -6,7 +6,6 @@ tasks:
       msg: "The 'foo' variable value is {{ foo }}"
     when: foo is defined
 
-  - name: "Ansible | Print a message if a variable is undefined"
-    debug:
+  - debug:
       msg: "The 'bar' variable is undefined"
     when: bar is not define
