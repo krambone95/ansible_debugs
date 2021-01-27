@@ -8,5 +8,4 @@
 
 - name: debug output
   debug:
-  msg
-  - "{{ service_names }}"
+    msg: "{{ service_names }}"
