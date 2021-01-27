@@ -1,6 +1,7 @@
 ---
 # Show some output for testing access to nested variables
-- tasks:
+- hosts: control
+  tasks:
      - debug: 
          msg: "Network interfaces assigned to "
      - debug: 
