@@ -1,6 +1,8 @@
 ---
 # Show some output for testing access to nested variables
 - hosts: all
+  include_vars:
+    file: ../vars/proxy_hosts.yml
   tasks:
      - debug: 
          msg: "Network interfaces assigned to "
