@@ -5,4 +5,4 @@
      - include_vars:
          file: ../vars/proxy_hosts.yml
      - debug: 
-         msg: Access var "{{ server_names['vpmsquid'] }}"
+         msg: Access var "{{ remote_install_path }}"
