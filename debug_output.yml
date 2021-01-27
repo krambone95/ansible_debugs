@@ -1,2 +1,6 @@
 ---
-- debug: msg={{ network.addresses.private_man | selectattr("type", "equalto", "floating") | map(attribute='addr') | list }}
+- name: include variables
+  include_vars:
+    file: proxy_hosts.yml
+
+- debug: msg={{ service_names.name }}
