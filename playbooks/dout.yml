@@ -5,7 +5,3 @@
   hosts: all
   vars_files:
     - ../vars/proxy_hosts.yml
-
-- name: debug output
-  debug:
-    msg: "{{ service_names }}"
