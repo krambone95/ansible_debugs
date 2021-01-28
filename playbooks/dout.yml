@@ -10,5 +10,5 @@
         - Proxy Explicit Port - "{{ item.port_explicit_proxy }}"
         - Proxy HTTP Port - "{{ item.port_http_proxy }}"
         - Proxy HTTPS Port - "{{ item.port_https_proxy }}"
-        - Combo ports - {{ item.port_explicit_proxy }},{{ item.port_http_proxy }},{{ item.port_https_proxy}}
+        - {{ item.port_explicit_proxy }},{{ item.port_http_proxy }},{{ item.port_https_proxy}}
       loop: "{{ squid_instances }}"
