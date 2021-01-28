@@ -10,4 +10,4 @@
         - Proxy Explicit Port - "{{ item.port_explicit_proxy }}"
         - Proxy HTTP Port - "{{ item.port_http_proxy }}"
         - Proxy HTTPS Port - "{{ item.port_https_proxy }}"
-      loop: "{{ service_names }}"
+      loop: {{ squid_instances }}
